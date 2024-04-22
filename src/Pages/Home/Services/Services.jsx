@@ -6,9 +6,9 @@ const Services = () => {
 
     // data load kora jon no 
     useEffect( ()=>{
-        fetch('services.json')
-        .then(res => res.json())  //j response ta asbea takea json a convert korbo
-        .then(data => setServices(data)); //j data ta pabo takea setServices a data modhea set korbo
+        fetch("http://localhost:5000/services")
+          .then((res) => res.json()) //j response ta asbea takea json a convert korbo
+          .then((data) => setServices(data)); //j data ta pabo takea setServices a data modhea set korbo
 
 
     }, [])
