@@ -1,8 +1,18 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import ServiceCard from "./ServiceCard";
+import { AuthContext } from "../../../providers/AuthProvider";
 
 const Services = () => {
     const [services, setServices] = useState([]);
+     const [bookings, setBookings] = useState([]);
+     const { user } = useContext(AuthContext);
+     const url = `http://localhost:5000/bookings?email=${user?.email}`;
+
+     useEffect(() => {
+       fetch(url)
+         .then((res) => res.json())
+         .then((data) => setBookings(data));
+     }, [url]);
 
     // data load kora jon no 
     useEffect( ()=>{
@@ -25,12 +35,13 @@ const Services = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {
-                services.map(service => <ServiceCard
-                key={service._id}
-                service={service}
-                ></ServiceCard>)
-            }
+          {services.map((service) => (
+            <ServiceCard
+              key={service._id}
+              service={service}
+              bookings={bookings}
+            ></ServiceCard>
+          ))}
         </div>
       </div>
     );
