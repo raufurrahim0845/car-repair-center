@@ -2,10 +2,23 @@ import person1 from "../../../assets/images/team/1.jpg"
 import person2 from "../../../assets/images/team/2.jpg"
 import person3 from "../../../assets/images/team/3.jpg"
 import ContactUs from "../Contact/ContactUs";
+import homeService from "../../../assets/images/checkout/checkout.png"
+
 
 const OurTeam = () => {
   return (
     <div>
+      {/* image and heading section  */}
+      <div className="carousel-item relative w-full">
+        <img src={homeService} className="w-full rounded-xl" />
+        {/* Text Design  */}
+        <div className="absolute flex items-center  h-full left-0  bottom-0 bg-gradient-to-r from-[#151515] to-[rgb(21,21,21,0)] pl-12">
+          <div className="text-white space-y-8">
+            <h2 className="text-5xl font-bold">Meet Our Team Members</h2>
+          </div>
+        </div>
+      </div>
+
       <div>
         <h2 className="font-bold text-center text-3xl md:mt-6 text-[#FF3811]">
           Team
@@ -59,7 +72,6 @@ const OurTeam = () => {
           </div>
         </div>
       </div>
-
 
       <div>
         <ContactUs></ContactUs>

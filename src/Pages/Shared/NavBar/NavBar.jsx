@@ -23,6 +23,9 @@ const NavBar = () => {
         <li>
           <Link to="/ourteam">Team</Link>
         </li>
+        {/* <li>
+          <Link to="/testimonial">Testimonial</Link>
+        </li> */}
         {user?.email ? (
           <>
             <li>

@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../providers/AuthProvider";
 import BookingRow from "./BookingRow";
+import toast from "react-hot-toast";
 
 
 const Booking = () => {
@@ -27,7 +28,7 @@ const Booking = () => {
           .then((data) => {
             console.log(data);
             if (data.deletedCount > 0) {
-              alert(`Deleted Successfully`);
+              toast.success("Deleted Successfully")
               const remaining = bookings.filter(booking => booking._id !== id);
               setBookings(remaining);
             }

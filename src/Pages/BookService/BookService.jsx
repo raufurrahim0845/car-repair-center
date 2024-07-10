@@ -1,14 +1,16 @@
-
+import homeService from "../../assets/images/checkout/checkout.png"
 import { useContext } from "react";
-import {  useLoaderData } from "react-router-dom";
+import {  useLoaderData, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import toast from "react-hot-toast";
 
 
 const BookService = () => {
 
     const service = useLoaderData();
     const { title, _id, price,img } = service;
-    const {user} = useContext(AuthContext)
+    const {user} = useContext(AuthContext);
+    const navigate=useNavigate();
 
     const handelBookService = event =>{
       event.preventDefault();
@@ -42,17 +44,29 @@ const BookService = () => {
         .then((data) => {
           console.log(data);
 
-          //alert booking successfully or not 
+          //booking successfully or not 
           if(data.insertedId){
-            alert('SService book successfully')
+            toast.success("Service booked successfully");
+            navigate("/bookings");
           }
         });
 
     }
     return (
       <div>
-        <h2 className="text-center text-3xl">Book Service: {title}</h2>
+        {/* image and heading section  */}
+        <div className="carousel-item relative w-full">
+          <img src={homeService} className="w-full rounded-xl" />
+          {/* Text Design  */}
+          <div className="absolute flex items-center  h-full left-0  bottom-0 bg-gradient-to-r from-[#151515] to-[rgb(21,21,21,0)] pl-12">
+            <div className="text-white space-y-8">
+              <h2 className="text-5xl font-bold">Book Service</h2>
+            </div>
+          </div>
+        </div>
+        <h2 className="text-center text-3xl mt-6">Book Service: {title}</h2>
 
+        {/* form section  */}
         <div>
           <form onSubmit={handelBookService}>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
@@ -63,9 +77,10 @@ const BookService = () => {
                 </label>
                 <input
                   type="text"
-                  placeholder="user name" defaultValue={user?.displayName}
+                  placeholder="user name"
                   name="name"
-                  className="input input-bbookinged"
+                  defaultValue={user?.displayName}
+                  className="input input-bordered"
                   required
                 />
               </div>
@@ -90,7 +105,8 @@ const BookService = () => {
                 </label>
                 <input
                   type="email"
-                  placeholder="email" defaultValue={user?.email}
+                  placeholder="email"
+                  defaultValue={user?.email}
                   name="email"
                   className="input input-bordered"
                   required

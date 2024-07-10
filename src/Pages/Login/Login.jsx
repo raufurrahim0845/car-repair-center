@@ -1,10 +1,12 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import img from '../../assets/images/login/login.svg'
 import { useContext } from 'react';
 import { AuthContext } from '../../providers/AuthProvider';
+import toast from 'react-hot-toast';
 
 const Login = () => {
   const {signIn} = useContext(AuthContext);
+  const navigate = useNavigate();
 
     const handleLogin = event =>{
         event.preventDefault();
@@ -16,7 +18,9 @@ const Login = () => {
         signIn(email, password)
         .then(result => {
           const user = result.user;
-          console.log(user)
+          console.log(user);
+          navigate("/");
+          toast.success("Login Successful");
         })
 
         .catch(error => console.log(error));
