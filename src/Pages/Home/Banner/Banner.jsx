@@ -14,11 +14,13 @@ const Banner = () => {
           <div className="absolute flex items-center  h-full left-0  bottom-0 bg-gradient-to-r from-[#151515] to-[rgb(21,21,21,0)] pl-12">
             <div className="text-white space-y-8 w-1/2">
               <h2 className="text-6xl font-bold">
-                Affordable Price For Car Servicing
+                Effortless Car Service Booking
               </h2>
               <p>
-                There are many variations of passages of available, but the
-                majority have suffered alteration in some form
+                Book your car service online anytime, anywhere. Our
+                user-friendly platform makes scheduling a breeze. No more
+                waiting on calls or in line. Enjoy the convenience of digital
+                booking.
               </p>
               <div>
                 <button className="btn btn-primary mr-5">Discover More</button>
@@ -43,11 +45,13 @@ const Banner = () => {
           <div className="absolute flex items-center  h-full left-0  bottom-0 bg-gradient-to-r from-[#151515] to-[rgb(21,21,21,0)] pl-12">
             <div className="text-white space-y-8 w-1/2">
               <h2 className="text-6xl font-bold">
-                Affordable Price For Car Servicing
+                Reliable and Efficient Service
               </h2>
               <p>
-                There are many variations of passages of available, but the
-                majority have suffered alteration in some form
+                Experience top-notch car servicing from our skilled technicians.
+                Manage everything online for ultimate convenience. Quality
+                service is just a click away. We ensure your car is in expert
+                hands.
               </p>
               <div>
                 <button className="btn btn-primary mr-5">Discover More</button>
@@ -73,11 +77,13 @@ const Banner = () => {
           <div className="absolute flex items-center  h-full left-0  bottom-0 bg-gradient-to-r from-[#151515] to-[rgb(21,21,21,0)] pl-12">
             <div className="text-white space-y-8 w-1/2">
               <h2 className="text-6xl font-bold">
-                Affordable Price For Car Servicing
+                Track Your Service in Real-Time
               </h2>
               <p>
-                There are many variations of passages of available, but the
-                majority have suffered alteration in some form
+                Stay updated with real-time notifications and track your car
+                service status. Always know the progress of your service.
+                Transparency is our priority. Keep informed every step of the
+                way.
               </p>
               <div>
                 <button className="btn btn-primary mr-5">Discover More</button>
@@ -103,11 +109,12 @@ const Banner = () => {
           <div className="absolute flex items-center  h-full left-0  bottom-0 bg-gradient-to-r from-[#151515] to-[rgb(21,21,21,0)] pl-12">
             <div className="text-white space-y-8 w-1/2">
               <h2 className="text-6xl font-bold">
-                Affordable Price For Car Servicing
+                Expert Technicians at Your Service
               </h2>
               <p>
-                There are many variations of passages of available, but the
-                majority have suffered alteration in some form
+                Our certified technicians ensure high-quality car servicing.
+                Trust us with your vehicle’s maintenance. Skilled professionals
+                handle your car. Reliable service guaranteed.
               </p>
               <div>
                 <button className="btn btn-primary mr-5">Discover More</button>
@@ -132,12 +139,11 @@ const Banner = () => {
           {/* Text Design  */}
           <div className="absolute flex items-center  h-full left-0  bottom-0 bg-gradient-to-r from-[#151515] to-[rgb(21,21,21,0)] pl-12">
             <div className="text-white space-y-8 w-1/2">
-              <h2 className="text-6xl font-bold">
-                Affordable Price For Car Servicing
-              </h2>
+              <h2 className="text-6xl font-bold">24/7 Customer Support</h2>
               <p>
-                There are many variations of passages of available, but the
-                majority have suffered alteration in some form
+                Have questions or need assistance? Our customer support team is
+                available round-the-clock to help you. We are here for you
+                anytime. Contact us whenever you need help.
               </p>
               <div>
                 <button className="btn btn-primary mr-5">Discover More</button>
@@ -162,12 +168,12 @@ const Banner = () => {
           {/* Text Design  */}
           <div className="absolute flex items-center  h-full left-0  bottom-0 bg-gradient-to-r from-[#151515] to-[rgb(21,21,21,0)] pl-12">
             <div className="text-white space-y-8 w-1/2">
-              <h2 className="text-6xl font-bold">
-                Affordable Price For Car Servicing
-              </h2>
+              <h2 className="text-6xl font-bold">Eco-Friendly Practices</h2>
               <p>
-                There are many variations of passages of available, but the
-                majority have suffered alteration in some form
+                We follow green practices to minimize our environmental impact.
+                Support sustainable car servicing with us. Environmentally
+                responsible solutions. Protecting the planet, one service at a
+                time.
               </p>
               <div>
                 <button className="btn btn-primary mr-5">Discover More</button>

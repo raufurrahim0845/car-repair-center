@@ -25,9 +25,12 @@ const OurTeam = () => {
         </h2>
         <h3 className="font-bold text-center text-2xl">Meet Our Team</h3>
         <p className="text-center capitalize">
-          the majority have suffered alteration in some form, by injected
-          humour, or randomised <br></br> words which do not look even slightly
-          believable.
+          Our dedicated team comprises experienced service technicians, skilled
+          developers, and customer service experts, all committed to delivering
+          exceptional car servicing experiences. Each member brings a unique set
+          of skills to ensure efficient, reliable, and user-friendly services.
+          Together, we strive to exceed customer expectations <br /> and set new
+          industry standards.
         </p>
       </div>
 

@@ -26,7 +26,7 @@ const ContactUs = () => {
             <div>
               <p className="text-[#FFF]">Have a question?</p>
               <h2 className="text-[#FFF] font-semibold text-xl">
-                +2546 251 2658
+                +8801315907708
               </h2>
             </div>
           </div>
@@ -38,7 +38,7 @@ const ContactUs = () => {
             <div>
               <p className="text-[#FFF]">Need a repair? our address</p>
               <h2 className="text-[#FFF] font-semibold text-xl">
-                Liza Street, New York
+                Sultanpur, Naogaon.
               </h2>
             </div>
           </div>
