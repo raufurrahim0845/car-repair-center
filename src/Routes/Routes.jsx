@@ -40,13 +40,17 @@ const router = createBrowserRouter([
         path: "book/:id",
         element: <BookService></BookService>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/services/${params.id}`),
+          fetch(
+            `https://car-repair-server-ten.vercel.app/services/${params.id}`
+          ),
       },
       {
         path: "details/:id",
         element: <DetailsServices></DetailsServices>,
         loader: ({ params }) =>
-          fetch(`http://localhost:5000/services/${params.id}`),
+          fetch(
+            ` https://car-repair-server-ten.vercel.app/services/${params.id}`
+          ),
       },
       {
         path: "bookings",
@@ -59,6 +63,5 @@ const router = createBrowserRouter([
     ],
   },
 ]);
-
 
 export default router;

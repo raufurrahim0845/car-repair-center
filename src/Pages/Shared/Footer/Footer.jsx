@@ -4,15 +4,17 @@ import logo from "../../../assets/logo.svg";
 const Footer = () => {
     return (
       <footer className="footer p-10 bg-base-200 text-base-content mt-6 md:8">
-        <aside>
+        <div>
+          <aside>
             {/* logo used */}
             <img src={logo} alt="image can not found" />
-          <p>
-            ACME Industries Ltd.
-            <br />
-            Providing reliable tech since 1992
-          </p>
-        </aside>
+            <p>
+              ACME Industries Ltd.
+              <br />
+              Providing reliable tech since 1992
+            </p>
+          </aside>
+        </div>
         <nav>
           <h6 className="footer-title">Services</h6>
           <a className="link link-hover">Branding</a>

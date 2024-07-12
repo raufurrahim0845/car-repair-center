@@ -13,7 +13,7 @@ const Banner = () => {
           {/* Text Design  */}
           <div className="absolute flex items-center  h-full left-0  bottom-0 bg-gradient-to-r from-[#151515] to-[rgb(21,21,21,0)] pl-12">
             <div className="text-white space-y-8 w-1/2">
-              <h2 className="text-6xl font-bold">
+              <h2 className="text-3xl md:text-6xl font-bold">
                 Effortless Car Service Booking
               </h2>
               <p>
@@ -44,7 +44,7 @@ const Banner = () => {
           {/* Text design  */}
           <div className="absolute flex items-center  h-full left-0  bottom-0 bg-gradient-to-r from-[#151515] to-[rgb(21,21,21,0)] pl-12">
             <div className="text-white space-y-8 w-1/2">
-              <h2 className="text-6xl font-bold">
+              <h2 className="text-3xl md:text-6xl font-bold">
                 Reliable and Efficient Service
               </h2>
               <p>
@@ -76,7 +76,7 @@ const Banner = () => {
           {/* Text Design  */}
           <div className="absolute flex items-center  h-full left-0  bottom-0 bg-gradient-to-r from-[#151515] to-[rgb(21,21,21,0)] pl-12">
             <div className="text-white space-y-8 w-1/2">
-              <h2 className="text-6xl font-bold">
+              <h2 className="text-3xl md:text-6xl font-bold">
                 Track Your Service in Real-Time
               </h2>
               <p>
@@ -108,7 +108,7 @@ const Banner = () => {
           {/* Text Design  */}
           <div className="absolute flex items-center  h-full left-0  bottom-0 bg-gradient-to-r from-[#151515] to-[rgb(21,21,21,0)] pl-12">
             <div className="text-white space-y-8 w-1/2">
-              <h2 className="text-6xl font-bold">
+              <h2 className="text-3xl md:text-6xl font-bold">
                 Expert Technicians at Your Service
               </h2>
               <p>
@@ -139,7 +139,9 @@ const Banner = () => {
           {/* Text Design  */}
           <div className="absolute flex items-center  h-full left-0  bottom-0 bg-gradient-to-r from-[#151515] to-[rgb(21,21,21,0)] pl-12">
             <div className="text-white space-y-8 w-1/2">
-              <h2 className="text-6xl font-bold">24/7 Customer Support</h2>
+              <h2 className="text-3xl md:text-6xl font-bold">
+                24/7 Customer Support
+              </h2>
               <p>
                 Have questions or need assistance? Our customer support team is
                 available round-the-clock to help you. We are here for you
@@ -168,7 +170,9 @@ const Banner = () => {
           {/* Text Design  */}
           <div className="absolute flex items-center  h-full left-0  bottom-0 bg-gradient-to-r from-[#151515] to-[rgb(21,21,21,0)] pl-12">
             <div className="text-white space-y-8 w-1/2">
-              <h2 className="text-6xl font-bold">Eco-Friendly Practices</h2>
+              <h2 className="text-3xl md:text-6xl font-bold">
+                Eco-Friendly Practices
+              </h2>
               <p>
                 We follow green practices to minimize our environmental impact.
                 Support sustainable car servicing with us. Environmentally
